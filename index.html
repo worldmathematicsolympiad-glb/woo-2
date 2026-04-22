@@ -213,6 +213,35 @@
             text-align: center;
         }
 
+        /* --- AWARDS --- */
+        .award-card {
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .award-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 0.65rem;
+            font-family: 'Orbitron';
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        .award-requirement {
+            margin-top: 15px;
+            padding: 8px;
+            border-top: 1px solid var(--glass-border);
+            width: 100%;
+            font-size: 0.75rem;
+            color: var(--accent-purple);
+            font-weight: 700;
+        }
+
         /* --- OLYMPIADS --- */
         .olympiad-grid {
             display: grid;
@@ -452,6 +481,68 @@
                 <h4>Notifications</h4>
                 <p>Latest Updates & Alerts (PDF)</p>
             </a>
+        </div>
+    </section>
+
+    <!-- AWARDS SECTION -->
+    <section id="awards">
+        <h2 class="section-title">Recognition & Glory</h2>
+        <p style="text-align: center; color: var(--text-dim); max-width: 800px; margin: -30px auto 50px auto;">Excellence is recognized and celebrated. From global medals to digital certificates, every participant's achievement is honored.</p>
+        
+        <div class="awards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <!-- Top 1% -->
+            <div class="glass-card award-card">
+                <div class="award-badge">TOP 1%</div>
+                <div class="award-icon" style="font-size: 3.5rem; margin-bottom: 20px;">🥇</div>
+                <h3>Global Gold Medal</h3>
+                <p>Supreme Achievement</p>
+                <p style="font-size: 0.85rem; margin-top: 15px; color: var(--text-dim);">Awarded to the top 1% of overall scorers in each age category (Epsilon & Zeta). The pinnacle of WOO recognition.</p>
+                <div class="award-requirement">Requires minimum 2,000 total participants</div>
+            </div>
+            
+            <!-- Top 3 -->
+            <div class="glass-card award-card">
+                <div class="award-badge">TOP 3</div>
+                <div class="award-icon" style="font-size: 3.5rem; margin-bottom: 20px;">🏆</div>
+                <h3>Subject Distinction</h3>
+                <p>Olympiad Mastery</p>
+                <p style="font-size: 0.85rem; margin-top: 15px; color: var(--text-dim);">Medals awarded to the Top 3 participants in each individual Olympiad (WPO, WCO, WBO, WSO, WJSO, WMO, WHO).</p>
+                <div class="award-requirement">Requires minimum 2,000 total participants</div>
+            </div>
+
+            <!-- Merit -->
+            <div class="glass-card award-card">
+                <div class="award-badge">MERIT</div>
+                <div class="award-icon" style="font-size: 3.5rem; margin-bottom: 20px;">📜</div>
+                <h3>WOO Topper Certificate</h3>
+                <p>Merit Recognition</p>
+                <p style="font-size: 0.85rem; margin-top: 15px; color: var(--text-dim);">Digital certificates for those who top any individual challenge. Certificate rank depends on merit and percentile score.</p>
+                <div class="award-requirement">Awarded based on percentile performance</div>
+            </div>
+
+            <!-- 6+ Events -->
+            <div class="glass-card award-card">
+                <div class="award-badge">6+ EVENTS</div>
+                <div class="award-icon" style="font-size: 3.5rem; margin-bottom: 20px;">💼</div>
+                <h3>Exclusive WOO Certificate</h3>
+                <p>Multi-Discipline Honor</p>
+                <p style="font-size: 0.85rem; margin-top: 15px; color: var(--text-dim);">Special digital certificate for students who participated in a minimum of 6 out of the 7 Olympiads. A mark of true intellectual breadth.</p>
+                <div class="award-requirement">Attempt 6+ Olympiads to qualify</div>
+            </div>
+
+            <!-- Participation -->
+            <div class="glass-card award-card">
+                <div class="award-badge">ALL PARTICIPANTS</div>
+                <div class="award-icon" style="font-size: 3.5rem; margin-bottom: 20px;">🌟</div>
+                <h3>Participation e-Certificate</h3>
+                <p>For Every Explorer</p>
+                <p style="font-size: 0.85rem; margin-top: 15px; color: var(--text-dim);">Every student who completes any of the seven Olympiads earns a digital certificate of participation. Your journey is recognized.</p>
+                <div class="award-requirement">Complete any single Olympiad</div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; padding: 25px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); text-align: center; border-radius: 10px; font-size: 0.9rem;">
+            <span style="color: var(--accent-cyan);">⭐ Physical Medals & Trophies Note:</span> Gold medals and subject distinction medals will be physically awarded only if the total participant count reaches a minimum of 2,000 participants. Digital certificates are unconditional and will be issued to all qualifying participants.
         </div>
     </section>
 
